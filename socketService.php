@@ -102,7 +102,7 @@ namespace SocketServ{
                 /**/
                 //responde conforme o processamento
                 if($msg != ""){
-                    socket_sendto($sock, $msg, 65535 , 0 , $remote_ipNew , $remote_portNew);
+                    socket_sendto($sock, $msg, 65535 , 0 , $remote_ip , $remote_port);
                 }
 
                 $mensagens_log.="\r\n ---------------";
