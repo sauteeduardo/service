@@ -35,7 +35,7 @@ namespace SocketServ{
                 $mensagens_log.= "erro: $errormsg | $exeption ". PHP_EOL."\r\n";
             }
             //SERVIDOR do host
-            $host = "192.168.1.1";
+            $host = "192.168.1.1" ;
 
             //CONECTA O SOCKET AO SERVIDOR NA PORTA 8080
             try{
