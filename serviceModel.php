@@ -17,23 +17,23 @@ namespace ServiceModel{
         public function select_all(){
             //BUSCO A SAFRA CORRENTE
             
-            $sqlSafra = "select * from service";
-            $qrySafra = mysql_query($sqlSafra);
-            $rowSafra = mysql_fetch_array($qrySafra);
-            return $rowSafra;
+            $sqlService = "select * from service";
+            $qryService = mysql_query($sqlService);
+            $rowService = mysql_fetch_array($qryService);
+            return $rowService;
             //desalocando as variáveis da memória por questão de boas práticas
-            unset($sqlSafra);
-            unset($qrySafra);
-            unset($rowSafra);
+            unset($sqlService);
+            unset($qryService);
+            unset($rowService);
         }
         public function select_id($id = 0){
-            $sqlLevante = "select * from service where id = ".$id;
-            $qryLevante = mysql_query($sqlLevante);
-            $rowLevante = mysql_fetch_array($qryLevante);
-            return $rowLevante;
-            unset($sqlLevante);
-            unset($qryLevante);
-            unset($rowLevante);
+            $sqlService = "select * from service where id = ".$id;
+            $qryService = mysql_query($sqlService);
+            $rowService = mysql_fetch_array($qryService);
+            return $rowService;
+            unset($sqlService);
+            unset($qryService);
+            unset($rowService);
         }
         //função auxiliar pra uso de data
         public function aaaammdd_ddmmaaaa($aaaa_mm_dd) {
