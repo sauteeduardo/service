@@ -6,4 +6,6 @@ Podem ser implementados outros casos ( usando REST juntamente com o streaming, a
 
 Este projeto é apenas para mostrar como se criar um serviço como daemon service.
 
+(pode ser usado para mandar juntamente com o loop de eventos para dispositivos com microcontrollers, etc.. )
+
 Qualquer dúvida, ou sugestão, pode me contatar :)
